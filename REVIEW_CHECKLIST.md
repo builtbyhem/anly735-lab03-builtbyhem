@@ -59,6 +59,6 @@ Machine-readable results: `results/verification.json`, `results/html_verificatio
 
 ## Packaging
 
-The standalone HTML is the report deliverable. The project archive includes Quarto source, code, exact dependencies, input feature snapshot, sampling manifest, results, and source references. It excludes transient per-shard caches and unused intermediate downloads. The snapshot permits offline analytical reproduction; full image-feature regeneration requires network access to the pinned mirror.
+The standalone HTML is the Lab 3 report deliverable. A matching Quarto-rendered DOCX is also included, using the general professor template structure and Lab 2 style reference. The project archive includes Quarto source, code, exact dependencies, input feature snapshot, sampling manifest, results, and source references. It excludes transient per-shard caches and unused intermediate downloads. The snapshot permits offline analytical reproduction; full image-feature regeneration requires network access to the pinned mirror.
 
-The completed materials are published at https://github.com/builtbyhem/anly735-lab03-hemendra0329. The first two lab repositories were not changed, and nothing was submitted to Canvas.
+The completed materials are published at https://github.com/builtbyhem/anly735-lab03-builtbyhem. The first two lab repositories were not changed, and nothing was submitted to Canvas.

@@ -1,14 +1,16 @@
 ---
 title: "When the Test Environment Changes"
-subtitle: "Replication Laboratory 3 | Generalization across hospitals in Camelyon17-WILDS"
+subtitle: "ANLY 735 Research Seminar in Predictive AI"
 author: "Hemendra Gummadi"
 date: "2026-10-25"
 format:
+  docx:
+    toc: false
+    reference-doc: formatting/reference.docx
   html:
     embed-resources: true
     toc: true
     toc-depth: 2
-    number-sections: true
     theme: cosmo
     css: styles.css
     code-tools: true
@@ -16,7 +18,28 @@ bibliography: references.bib
 csl: apa.csl
 ---
 
-# Research claim
+# Study
+
+**Article:** *WILDS: A Benchmark of in-the-Wild Distribution Shifts*
+
+**Authors:** Pang Wei Koh, Shiori Sagawa, Henrik Marklund, and colleagues
+
+**DOI/URL:** <https://proceedings.mlr.press/v139/koh21a.html>
+
+**Replication Type:** Partial replication using Camelyon17-WILDS
+
+**Computational Environment:** Python 3.12.14 on Linux x86_64; Quarto 1.10.19
+
+**Primary Packages:** NumPy 2.3.5, pandas 2.2.3, scikit-learn 1.8.0, SciPy 1.17.0, Matplotlib 3.10.8, Pillow 12.3.0, PyArrow 26.0.0, and fsspec 2026.9.0
+
+**Random Seeds:** Image sampling 735; patient bootstrap 8735. The classifier uses a deterministic solver.
+
+**Repository:** <https://github.com/builtbyhem/anly735-lab03-builtbyhem>
+
+
+# 1 Research Claim
+
+## What result are you attempting to reproduce
 
 **Replication question:** When the fitted model and prediction task remain fixed, how much does performance change between familiar hospitals and a hospital outside development?
 
@@ -24,7 +47,9 @@ This laboratory examines the claim that strong in-distribution performance can o
 
 The substantive question concerns whether the evidence travels across environments. It does not require a new model for each test condition. One fitted pipeline is evaluated unchanged on both conditions, using a fixed classification threshold of 0.5.
 
-# Replication strategy
+# 2 Replication Strategy
+
+## How will you investigate the claim
 
 This is a **partial replication**: it retains the Camelyon17-WILDS task and hospital-based split definitions but uses a sampled dataset and a simpler classifier. A pinned public mirror supplies PNG patches and source metadata because the official CodaLab download returned an error. The mirror is not an official Stanford-hosted distribution; its provenance is a limitation, not something assumed away.
 
@@ -32,7 +57,7 @@ The published neural-network baseline is replaced by logistic regression on fixe
 
 The configuration recorded the sample-selection rule, classifier settings, metrics, threshold, and subgroup analyses before this model's test results were examined. This is a local decision record, not a formal preregistration. No hyperparameter search, threshold search, or model selection used either evaluation set.
 
-# Data and environments
+# 3 Data
 
 The original benchmark adapts the CAMELYON17 challenge data [@bandi2019]. It uses 96-by-96 tissue patches, with a binary label describing tumor presence in the central 32-by-32 region. Its hospital split provides 302,436 training patches, 33,560 ID validation patches, 34,904 OOD validation patches, and 85,054 OOD test patches. ID validation comes from the same 30 slides as training; the OOD test comes from 10 slides in a different hospital [@koh2021supp].
 
@@ -52,7 +77,7 @@ To limit downloading, entire Parquet row groups were sampled uniformly without r
 
 The realized sample is a cluster sample, not a simple random sample of patches. Its manifest records selected groups, source-row locations, and inclusion probabilities. Weights are inverse inclusion probabilities. Within each evaluation environment these probabilities are constant, so weighting leaves the displayed evaluation averages unchanged. The sample was not adjusted after seeing performance.
 
-# Method and computational record
+# 4 Method
 
 The pipeline extracts **88 fixed image features** from the whole patch and central 32-by-32 region. For each region, each RGB channel contributes mean, standard deviation, 10th/50th/90th percentiles, and an eight-bin histogram. Grayscale horizontal and vertical gradients and three dark-pixel fractions complete the feature set. Pixels are scaled by the fixed constant 255; no per-image stain normalization is applied.
 
@@ -62,7 +87,7 @@ Accuracy measures the fraction of correctly classified patches. Balanced accurac
 
 The accompanying project contains the feature snapshot, source-row manifest, per-image hashes, executable preparation and analysis scripts, exact dependencies, raw predictions, and input/code hashes. Analytical reproduction works offline from the snapshot. Regenerating image features requires access to the pinned mirror.
 
-# Results
+# 5 Results
 
 {{< include results/performance_table.md >}}
 
@@ -94,7 +119,7 @@ Intervals use 1,000 percentile-bootstrap resamples of patients separately within
 
 Eight OOD bootstrap resamples contain only one class; balanced accuracy is undefined for those resamples. Its OOD and difference intervals therefore use 992 valid replicates, while all accuracy and Brier intervals use 1,000. The exact counts are recorded. These approximate intervals condition on the fitted model and sampled images; they do not represent uncertainty across possible target hospitals or training datasets. With only nine sampled target patients, their precision is limited.
 
-# Diagnosis before intervention
+## Diagnosis before intervention
 
 The outcome proportions are nearly equal: approximately 50.8% tumor in ID and 50.6% in OOD. Balanced accuracy also declines substantially, and the class-specific table localizes the problem to non-tumor patches. A different tumor proportion is therefore not an adequate explanation for the observed accuracy loss.
 
@@ -108,7 +133,16 @@ These measured differences make color-sensitive representation a plausible vulne
 
 The provided fields and image dimensions are consistent across environments, and no feature values are missing. Consistent encoding does not prove equivalent acquisition or measurement practices. This design cannot isolate covariate shift from a changed feature-outcome relationship, and a low OOD AUC alone does not identify the causal mechanism. Retraining, recalibration, and changing the threshold are deliberately deferred until after diagnosis.
 
-# Comparison with the anchor paper
+# 6 Compare
+
+## How closely did your results align with the original study
+
+| Evidence | Original study | This replication |
+|---|---:|---:|
+| ID accuracy | 93.2% | 87.67% |
+| OOD accuracy | 70.3% | 61.88% |
+| OOD minus ID | -22.9 pp | -25.78 pp |
+| Model | DenseNet 121 | Image features and logistic regression |
 
 @koh2021 report Camelyon17 ERM accuracy of **93.2% ID and 70.3% OOD**, a 22.9-point decrease. The present classifier also deteriorates across hospitals, but its 25.78-point gap is not a numerical replication of that result. A different representation, fitting objective, and sampled cohort can change both performance levels and the gap.
 
@@ -116,7 +150,7 @@ The original baseline uses a DenseNet-121 trained from scratch and aggregates re
 
 The benchmark deliberately includes consequential shifts, and this target hospital was selected for visually distinctive patches [@koh2021supp]. The result consequently supports a claim about this defined hospital contrast, not an estimate of how often an arbitrary deployment shift will cause failure.
 
-# Deployment judgment and claim boundaries
+## Deployment judgment and claim boundaries
 
 **Judgment: Revalidate before deployment in the shifted environment.**
 
@@ -128,7 +162,23 @@ Additional evidence should include an agreed use case and acceptable false-posit
 
 **Unsupported claims:** staining is the proven cause; all unseen hospitals would fail similarly; the published DenseNet result has been numerically reproduced; or these patch-level results establish patient-level performance, fairness across demographic groups, or deployment safety.
 
-# Reproducibility limitations and extension
+# 7 Reproducibility Check
+
+- [x] Data source documented
+- [x] Code runs from beginning to end
+- [x] Computational environment identified
+- [x] Software and packages documented
+- [x] Package versions documented
+- [x] Random seeds documented
+- [x] Key preprocessing steps documented
+- [x] Evaluation procedure documented
+- [x] Repository README provides reproduction instructions
+
+**What was the greatest reproducibility challenge you encountered?**
+
+The main challenge was preserving the hospital comparison when the official download was unavailable. I used a pinned PNG mirror, checked full split counts and hospital metadata, recorded image hashes and sampled row locations, and retained a feature snapshot for offline reproduction. A second run produced identical predictions, and raw-prediction arithmetic independently matched accuracy and Brier scores. These checks verify this analysis without proving equivalence to the unavailable archive. The simpler classifier is another explicit departure; its results are not presented as the paper's neural-network baseline.
+
+## Limitations of the evidence
 
 Several limitations matter to the interpretation. First, the mirror preserves useful metadata and lossless PNG encoding, but no official archive checksum was available for comparison. Pinning its revision and retaining image hashes makes our input reproducible without proving its equivalence to every original patch.
 
@@ -138,27 +188,43 @@ Third, ID patches come from the same slides and patients as training. This follo
 
 Fourth, the 88-feature representation is intentionally limited. It can rely strongly on color and simple texture while missing morphology available to a convolutional model. Its failure cannot establish the cause or extent of failure in DenseNet or in clinical pathology systems. Likewise, one target hospital cannot characterize transportability across all institutions. Brier scores on roughly class-balanced research samples should not be interpreted as field calibration under a different prevalence.
 
-**One proposed extension:** conduct leave-one-source-hospital-out evaluation across hospitals 0, 3, and 4. At each of three rotations, fit the same fixed feature pipeline on two hospitals and evaluate the third without tuning its threshold. Prespecify specificity loss as the main diagnostic outcome, with balanced accuracy as a companion measure. This would test whether the observed false-positive problem recurs across other hospital changes or is concentrated in the selected target contrast. It would add evidence about cross-hospital variability without searching for a more favorable model. This extension is proposed, not executed.
+**Reproduce and render:**
 
-# Replication verdict
+```bash
+python code/run_analysis.py
+quarto render replication-lab.qmd --to html
+quarto render replication-lab.qmd --to docx
+python code/format_report.py replication-lab.docx
+```
 
-**Partially Reproduced.** The experiment reproduces the direction of the scoped finding: the same fitted model performs worse in a meaningfully different hospital environment. It does not reproduce the original architecture, full-data analysis, multi-seed results, or robustness-method comparisons, and its numerical gap is not claimed to match the paper.
+The feature snapshot supports offline analytical reproduction. Rebuilding it requires `python code/prepare_data.py` and network access. Package versions, raw predictions, hashes, and a complete session record are retained in the repository. AI assistance supported implementation, checking, and drafting; the author remains responsible for reviewing and defending the analysis.
 
-The replication verdict concerns alignment with the research claim. The deployment judgment concerns whether this classifier has enough relevant evidence for use. They answer different questions.
 
-# Reproduction instructions and transparency
+# 8 Extend
 
-Run `python code/run_analysis.py` from the project directory after installing `requirements.txt`. This regenerates the model, predictions, tables, figures, and session record from `data/features.parquet`. Then run `quarto render replication-lab.qmd --to html`. The HTML embeds its visual assets. To rebuild the image-feature snapshot rather than reuse it, run `python code/prepare_data.py` first; that step requires network access.
+## What did the replication reveal that you would investigate next
 
-The current WILDS repository is used as a documented implementation reference, not presented as a course-specific notebook. The report follows the supplied laboratory workflow and general course replication template. Its simplified classifier is an explicit methodological departure from the paper's baseline. No material from the earlier Bike Sharing draft supplies these results.
+I would conduct leave-one-source-hospital-out evaluation across hospitals 0, 3, and 4. At each of three rotations, fit the same fixed feature pipeline on two hospitals and evaluate the third without tuning its threshold. Prespecify specificity loss as the main diagnostic outcome, with balanced accuracy as a companion measure. This would test whether the observed false-positive problem recurs across other hospital changes or is concentrated in the selected target contrast. It would add evidence about cross-hospital variability without searching for a more favorable model. This extension is proposed, not executed.
 
-AI assistance supported implementation, checking, and drafting. The author remains responsible for reviewing the analysis and defending its decisions. Computational checks do not attest that the report has been independently reviewed by the student or submitted to Canvas.
+# Replication Verdict
 
-::: {.callout-note collapse="true" title="Session information and source hashes"}
-{{< include results/session_block.md >}}
-:::
+- [ ] **Reproduced** The central result was substantially reproduced.
+- [x] **Partially Reproduced** Some findings were reproduced, but meaningful differences remain.
+- [ ] **Not Reproduced** The central result was not reproduced.
+- [ ] **Not Directly Comparable** Numerical comparison is not appropriate for a proxy replication.
+
+The same fitted model performs worse at the specified held-out hospital, with degradation concentrated in specificity. The sampled mirror data and simpler classifier do not reproduce the original architecture, full-data analysis, or multi-seed results, so the verdict is partial. This verdict concerns alignment with the research claim; the deployment judgment concerns whether there is enough relevant evidence for use.
+
 
 # References
 
 ::: {#refs}
+:::
+
+::: {.content-visible when-format="html"}
+
+# Detailed session record
+
+{{< include results/session_block.md >}}
+
 :::

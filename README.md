@@ -1,8 +1,8 @@
 # ANLY 735 Replication Laboratory 3: Camelyon17-WILDS
 
 **Author:** Hemendra Gummadi  
-**Repository:** https://github.com/builtbyhem/anly735-lab03-hemendra0329  
-**Report:** [Rendered HTML](replication-lab.html) · [Quarto source](replication-lab.qmd)
+**Repository:** https://github.com/builtbyhem/anly735-lab03-builtbyhem  
+**Report:** [Rendered HTML](replication-lab.html) · [Word report](replication-lab.docx) · [Quarto source](replication-lab.qmd)
 
 This project supersedes the earlier Bike Sharing fallback. It is a **partial replication** using a fixed sampled Camelyon17 image cohort and a CPU-friendly image-statistics classifier. It is not a numerical reproduction of the published DenseNet baseline, and no instructor-specific starter is claimed.
 
@@ -18,7 +18,17 @@ python code/run_analysis.py
 quarto render replication-lab.qmd --to html
 ```
 
-On Windows, activate with `.venv\Scripts\activate`. Quarto 1.10.19 rendered the report. Jupyter is unnecessary; Python generates Markdown fragments, and Quarto includes them. The output HTML embeds its figures and styling.
+On Windows, activate with `.venv\Scripts\activate`. Quarto 1.10.19 rendered the report. Jupyter is unnecessary; Python generates Markdown fragments, and Quarto includes them. The output HTML embeds its figures and styling. Lab 3 specifically requests HTML; a Word copy is also provided. Both are rendered from the same Quarto source.
+
+To rebuild Word using the professor’s Quarto workflow and the Lab 2 style reference:
+
+```bash
+python -m pip install -r requirements-docx.txt
+quarto render replication-lab.qmd --to docx
+python code/format_report.py replication-lab.docx
+```
+
+`formatting/reference.docx` retains the Lab 2 style base with a clean body. The postprocessor fits tables and figures to the page. See `TEMPLATE_AUDIT.md` for the template and format checks.
 
 `data/features.parquet` is a derived image-feature snapshot and includes labels, identifiers, grouping metadata, inclusion probabilities, source-row locations, and original PNG SHA-256 hashes. It contains no raw image bytes. It supports reproducing the statistical analysis without re-downloading the original images.
 
