@@ -1,0 +1,216 @@
+train-00000-of-00014.parquet: group 17, cumulative 100 images
+test-00002-of-00004.parquet: group 2, cumulative 100 images
+test-00000-of-00004.parquet: group 2, cumulative 100 images
+train-00001-of-00014.parquet: group 15, cumulative 100 images
+test-00003-of-00004.parquet: group 30, cumulative 100 images
+test-00001-of-00004.parquet: group 12, cumulative 100 images
+train-00000-of-00014.parquet: group 37, cumulative 200 images
+test-00001-of-00004.parquet: group 18, cumulative 200 images
+test-00002-of-00004.parquet: group 11, cumulative 200 images
+train-00001-of-00014.parquet: group 21, cumulative 200 images
+test-00000-of-00004.parquet: group 12, cumulative 200 images
+test-00003-of-00004.parquet: group 59, cumulative 200 images
+train-00000-of-00014.parquet: group 39, cumulative 300 images
+test-00001-of-00004.parquet: group 37, cumulative 300 images
+test-00002-of-00004.parquet: group 15, cumulative 300 images
+train-00001-of-00014.parquet: group 109, cumulative 300 images
+test-00000-of-00004.parquet: group 20, cumulative 300 images
+train-00000-of-00014.parquet: group 40, cumulative 400 images
+test-00003-of-00004.parquet: group 73, cumulative 300 images
+test-00001-of-00004.parquet: group 112, cumulative 400 images
+test-00002-of-00004.parquet: group 93, cumulative 400 images
+train-00001-of-00014.parquet: group 129, cumulative 400 images
+test-00000-of-00004.parquet: group 99, cumulative 400 images
+train-00000-of-00014.parquet: group 72, cumulative 500 images
+test-00003-of-00004.parquet: group 99, cumulative 400 images
+test-00001-of-00004.parquet: group 118, cumulative 500 images
+test-00002-of-00004.parquet: group 96, cumulative 500 images
+train-00001-of-00014.parquet: group 152, cumulative 500 images
+test-00000-of-00004.parquet: group 121, cumulative 500 images
+test-00003-of-00004.parquet: group 122, cumulative 500 images
+train-00000-of-00014.parquet: group 100, cumulative 600 images
+test-00001-of-00004.parquet: group 157, cumulative 600 images
+train-00001-of-00014.parquet: group 153, cumulative 600 images
+test-00002-of-00004.parquet: group 132, cumulative 600 images
+test-00000-of-00004.parquet: group 139, cumulative 600 images
+train-00000-of-00014.parquet: group 131, cumulative 700 images
+test-00003-of-00004.parquet: group 131, cumulative 600 images
+test-00001-of-00004.parquet: group 165, cumulative 700 images
+train-00001-of-00014.parquet: group 168, cumulative 700 images
+test-00002-of-00004.parquet: group 149, cumulative 700 images
+test-00000-of-00004.parquet: group 164, cumulative 700 images
+test-00001-of-00004.parquet: group 212, cumulative 764 images
+Finished data/test-00001-of-00004.parquet
+train-00001-of-00014.parquet: group 172, cumulative 800 images
+train-00000-of-00014.parquet: group 161, cumulative 800 images
+Finished data/train-00001-of-00014.parquet
+Finished data/train-00000-of-00014.parquet
+test-00003-of-00004.parquet: group 157, cumulative 700 images
+test-00000-of-00004.parquet: group 190, cumulative 800 images
+test-00002-of-00004.parquet: group 163, cumulative 800 images
+Finished data/test-00000-of-00004.parquet
+Finished data/test-00002-of-00004.parquet
+test-00003-of-00004.parquet: group 167, cumulative 800 images
+Finished data/test-00003-of-00004.parquet
+train-00002-of-00014.parquet: group 13, cumulative 100 images
+train-00003-of-00014.parquet: group 0, cumulative 100 images
+train-00004-of-00014.parquet: group 43, cumulative 100 images
+train-00006-of-00014.parquet: group 16, cumulative 100 images
+train-00002-of-00014.parquet: group 14, cumulative 200 images
+train-00005-of-00014.parquet: group 5, cumulative 100 images
+train-00003-of-00014.parquet: group 62, cumulative 200 images
+train-00007-of-00014.parquet: group 4, cumulative 100 images
+train-00004-of-00014.parquet: group 46, cumulative 200 images
+train-00006-of-00014.parquet: group 51, cumulative 200 images
+train-00002-of-00014.parquet: group 26, cumulative 300 images
+train-00005-of-00014.parquet: group 30, cumulative 200 images
+train-00007-of-00014.parquet: group 5, cumulative 200 images
+train-00003-of-00014.parquet: group 69, cumulative 300 images
+train-00004-of-00014.parquet: group 109, cumulative 300 images
+train-00006-of-00014.parquet: group 95, cumulative 300 images
+train-00002-of-00014.parquet: group 34, cumulative 400 images
+train-00005-of-00014.parquet: group 50, cumulative 300 images
+train-00003-of-00014.parquet: group 79, cumulative 400 images
+train-00007-of-00014.parquet: group 30, cumulative 300 images
+train-00004-of-00014.parquet: group 130, cumulative 400 images
+train-00006-of-00014.parquet: group 138, cumulative 400 images
+train-00002-of-00014.parquet: group 36, cumulative 500 images
+train-00005-of-00014.parquet: group 59, cumulative 400 images
+train-00007-of-00014.parquet: group 59, cumulative 400 images
+train-00003-of-00014.parquet: group 109, cumulative 500 images
+train-00004-of-00014.parquet: group 133, cumulative 500 images
+train-00006-of-00014.parquet: group 149, cumulative 500 images
+train-00002-of-00014.parquet: group 70, cumulative 600 images
+train-00005-of-00014.parquet: group 67, cumulative 500 images
+train-00007-of-00014.parquet: group 104, cumulative 500 images
+train-00003-of-00014.parquet: group 137, cumulative 600 images
+train-00004-of-00014.parquet: group 152, cumulative 600 images
+train-00006-of-00014.parquet: group 160, cumulative 600 images
+train-00002-of-00014.parquet: group 124, cumulative 700 images
+train-00005-of-00014.parquet: group 97, cumulative 600 images
+train-00007-of-00014.parquet: group 106, cumulative 600 images
+train-00004-of-00014.parquet: group 157, cumulative 700 images
+train-00003-of-00014.parquet: group 200, cumulative 700 images
+train-00006-of-00014.parquet: group 161, cumulative 700 images
+train-00002-of-00014.parquet: group 202, cumulative 800 images
+Finished data/train-00002-of-00014.parquet
+train-00007-of-00014.parquet: group 113, cumulative 700 images
+train-00005-of-00014.parquet: group 197, cumulative 700 images
+train-00004-of-00014.parquet: group 165, cumulative 800 images
+Finished data/train-00004-of-00014.parquet
+train-00003-of-00014.parquet: group 215, cumulative 800 images
+Finished data/train-00003-of-00014.parquet
+train-00006-of-00014.parquet: group 178, cumulative 800 images
+Finished data/train-00006-of-00014.parquet
+train-00005-of-00014.parquet: group 215, cumulative 800 images
+Finished data/train-00005-of-00014.parquet
+train-00007-of-00014.parquet: group 180, cumulative 800 images
+Finished data/train-00007-of-00014.parquet
+train-00008-of-00014.parquet: group 25, cumulative 100 images
+train-00009-of-00014.parquet: group 31, cumulative 100 images
+train-00010-of-00014.parquet: group 3, cumulative 100 images
+train-00011-of-00014.parquet: group 29, cumulative 100 images
+train-00008-of-00014.parquet: group 82, cumulative 200 images
+train-00012-of-00014.parquet: group 2, cumulative 100 images
+train-00009-of-00014.parquet: group 64, cumulative 200 images
+train-00013-of-00014.parquet: group 5, cumulative 100 images
+train-00010-of-00014.parquet: group 29, cumulative 200 images
+train-00011-of-00014.parquet: group 42, cumulative 200 images
+train-00008-of-00014.parquet: group 119, cumulative 300 images
+train-00012-of-00014.parquet: group 66, cumulative 200 images
+train-00010-of-00014.parquet: group 43, cumulative 300 images
+train-00013-of-00014.parquet: group 37, cumulative 200 images
+train-00011-of-00014.parquet: group 45, cumulative 300 images
+train-00009-of-00014.parquet: group 93, cumulative 300 images
+train-00008-of-00014.parquet: group 128, cumulative 400 images
+train-00012-of-00014.parquet: group 70, cumulative 300 images
+train-00010-of-00014.parquet: group 74, cumulative 400 images
+train-00013-of-00014.parquet: group 51, cumulative 300 images
+train-00009-of-00014.parquet: group 119, cumulative 400 images
+train-00011-of-00014.parquet: group 104, cumulative 400 images
+train-00008-of-00014.parquet: group 184, cumulative 500 images
+train-00012-of-00014.parquet: group 88, cumulative 400 images
+train-00010-of-00014.parquet: group 80, cumulative 500 images
+train-00009-of-00014.parquet: group 126, cumulative 500 images
+train-00011-of-00014.parquet: group 107, cumulative 500 images
+train-00013-of-00014.parquet: group 57, cumulative 400 images
+train-00008-of-00014.parquet: group 188, cumulative 600 images
+train-00012-of-00014.parquet: group 117, cumulative 500 images
+train-00010-of-00014.parquet: group 92, cumulative 600 images
+train-00009-of-00014.parquet: group 127, cumulative 600 images
+train-00011-of-00014.parquet: group 108, cumulative 600 images
+train-00008-of-00014.parquet: group 200, cumulative 700 images
+train-00013-of-00014.parquet: group 72, cumulative 500 images
+train-00010-of-00014.parquet: group 100, cumulative 700 images
+train-00012-of-00014.parquet: group 134, cumulative 600 images
+train-00009-of-00014.parquet: group 135, cumulative 700 images
+train-00011-of-00014.parquet: group 148, cumulative 700 images
+train-00008-of-00014.parquet: group 213, cumulative 800 images
+Finished data/train-00008-of-00014.parquet
+train-00013-of-00014.parquet: group 79, cumulative 600 images
+train-00010-of-00014.parquet: group 124, cumulative 800 images
+train-00012-of-00014.parquet: group 169, cumulative 700 images
+Finished data/train-00010-of-00014.parquet
+train-00009-of-00014.parquet: group 159, cumulative 800 images
+Finished data/train-00009-of-00014.parquet
+train-00011-of-00014.parquet: group 189, cumulative 800 images
+Finished data/train-00011-of-00014.parquet
+train-00013-of-00014.parquet: group 195, cumulative 700 images
+train-00012-of-00014.parquet: group 207, cumulative 800 images
+Finished data/train-00012-of-00014.parquet
+validation-00002-of-00003.parquet: group 13, cumulative 0 images
+validation-00002-of-00003.parquet: group 31, cumulative 0 images
+validation-00000-of-00003.parquet: group 30, cumulative 100 images
+validation-00001-of-00003.parquet: group 26, cumulative 100 images
+validation-00002-of-00003.parquet: group 35, cumulative 0 images
+train-00013-of-00014.parquet: group 200, cumulative 800 images
+Finished data/train-00013-of-00014.parquet
+validation-00002-of-00003.parquet: group 67, cumulative 0 images
+validation-00000-of-00003.parquet: group 47, cumulative 200 images
+validation-00001-of-00003.parquet: group 31, cumulative 200 images
+validation-00002-of-00003.parquet: group 105, cumulative 0 images
+validation-00000-of-00003.parquet: group 58, cumulative 300 images
+validation-00001-of-00003.parquet: group 63, cumulative 300 images
+validation-00002-of-00003.parquet: group 158, cumulative 0 images
+validation-00002-of-00003.parquet: group 160, cumulative 0 images
+validation-00001-of-00003.parquet: group 113, cumulative 300 images
+validation-00000-of-00003.parquet: group 66, cumulative 400 images
+validation-00002-of-00003.parquet: group 173, cumulative 0 images
+validation-00001-of-00003.parquet: group 149, cumulative 300 images
+validation-00002-of-00003.parquet: group 182, cumulative 0 images
+validation-00001-of-00003.parquet: group 150, cumulative 300 images
+validation-00000-of-00003.parquet: group 95, cumulative 500 images
+validation-00001-of-00003.parquet: group 169, cumulative 300 images
+validation-00002-of-00003.parquet: group 184, cumulative 0 images
+validation-00002-of-00003.parquet: group 194, cumulative 0 images
+validation-00001-of-00003.parquet: group 177, cumulative 300 images
+validation-00002-of-00003.parquet: group 218, cumulative 0 images
+Finished data/validation-00002-of-00003.parquet
+validation-00000-of-00003.parquet: group 121, cumulative 600 images
+validation-00001-of-00003.parquet: group 181, cumulative 300 images
+validation-00001-of-00003.parquet: group 191, cumulative 300 images
+validation-00000-of-00003.parquet: group 132, cumulative 700 images
+validation-00001-of-00003.parquet: group 193, cumulative 300 images
+validation-00001-of-00003.parquet: group 201, cumulative 300 images
+Finished data/validation-00001-of-00003.parquet
+validation-00000-of-00003.parquet: group 156, cumulative 800 images
+validation-00000-of-00003.parquet: group 165, cumulative 900 images
+validation-00000-of-00003.parquet: group 178, cumulative 1000 images
+validation-00000-of-00003.parquet: group 210, cumulative 1100 images
+validation-00000-of-00003.parquet: group 223, cumulative 1200 images
+Finished data/validation-00000-of-00003.parquet
+split  center  label
+ID     0       0         178
+               1         143
+       3       0         262
+               1         264
+       4       0         298
+               1         355
+OOD    2       0        1563
+               1        1601
+train  0       0        1167
+               1        1083
+       3       0        2074
+               1        2157
+       4       0        2472
+               1        2247

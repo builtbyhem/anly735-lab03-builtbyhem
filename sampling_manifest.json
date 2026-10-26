@@ -1,0 +1,392 @@
+[
+  {
+    "path": "data/test-00000-of-00004.parquet",
+    "source_rows": 21264,
+    "source_row_groups": 213,
+    "selected_row_groups": [
+      2,
+      12,
+      20,
+      99,
+      121,
+      139,
+      164,
+      190
+    ],
+    "selection_seed": 6603023111970433610,
+    "retained_rows": 800,
+    "inclusion_probability": 0.03755868544600939
+  },
+  {
+    "path": "data/test-00001-of-00004.parquet",
+    "source_rows": 21264,
+    "source_row_groups": 213,
+    "selected_row_groups": [
+      12,
+      18,
+      37,
+      112,
+      118,
+      157,
+      165,
+      212
+    ],
+    "selection_seed": 10498993426107294887,
+    "retained_rows": 764,
+    "inclusion_probability": 0.03755868544600939
+  },
+  {
+    "path": "data/test-00002-of-00004.parquet",
+    "source_rows": 21263,
+    "source_row_groups": 213,
+    "selected_row_groups": [
+      2,
+      11,
+      15,
+      93,
+      96,
+      132,
+      149,
+      163
+    ],
+    "selection_seed": 4032207757435003126,
+    "retained_rows": 800,
+    "inclusion_probability": 0.03755868544600939
+  },
+  {
+    "path": "data/test-00003-of-00004.parquet",
+    "source_rows": 21263,
+    "source_row_groups": 213,
+    "selected_row_groups": [
+      30,
+      59,
+      73,
+      99,
+      122,
+      131,
+      157,
+      167
+    ],
+    "selection_seed": 14684430933779297729,
+    "retained_rows": 800,
+    "inclusion_probability": 0.03755868544600939
+  },
+  {
+    "path": "data/train-00000-of-00014.parquet",
+    "source_rows": 21603,
+    "source_row_groups": 217,
+    "selected_row_groups": [
+      17,
+      37,
+      39,
+      40,
+      72,
+      100,
+      131,
+      161
+    ],
+    "selection_seed": 10041424637371865819,
+    "retained_rows": 800,
+    "inclusion_probability": 0.03686635944700461
+  },
+  {
+    "path": "data/train-00001-of-00014.parquet",
+    "source_rows": 21603,
+    "source_row_groups": 217,
+    "selected_row_groups": [
+      15,
+      21,
+      109,
+      129,
+      152,
+      153,
+      168,
+      172
+    ],
+    "selection_seed": 5760605294250103715,
+    "retained_rows": 800,
+    "inclusion_probability": 0.03686635944700461
+  },
+  {
+    "path": "data/train-00002-of-00014.parquet",
+    "source_rows": 21603,
+    "source_row_groups": 217,
+    "selected_row_groups": [
+      13,
+      14,
+      26,
+      34,
+      36,
+      70,
+      124,
+      202
+    ],
+    "selection_seed": 11645608440923755501,
+    "retained_rows": 800,
+    "inclusion_probability": 0.03686635944700461
+  },
+  {
+    "path": "data/train-00003-of-00014.parquet",
+    "source_rows": 21603,
+    "source_row_groups": 217,
+    "selected_row_groups": [
+      0,
+      62,
+      69,
+      79,
+      109,
+      137,
+      200,
+      215
+    ],
+    "selection_seed": 18303995848381770388,
+    "retained_rows": 800,
+    "inclusion_probability": 0.03686635944700461
+  },
+  {
+    "path": "data/train-00004-of-00014.parquet",
+    "source_rows": 21603,
+    "source_row_groups": 217,
+    "selected_row_groups": [
+      43,
+      46,
+      109,
+      130,
+      133,
+      152,
+      157,
+      165
+    ],
+    "selection_seed": 11813925950040100311,
+    "retained_rows": 800,
+    "inclusion_probability": 0.03686635944700461
+  },
+  {
+    "path": "data/train-00005-of-00014.parquet",
+    "source_rows": 21603,
+    "source_row_groups": 217,
+    "selected_row_groups": [
+      5,
+      30,
+      50,
+      59,
+      67,
+      97,
+      197,
+      215
+    ],
+    "selection_seed": 13872914489045016235,
+    "retained_rows": 800,
+    "inclusion_probability": 0.03686635944700461
+  },
+  {
+    "path": "data/train-00006-of-00014.parquet",
+    "source_rows": 21603,
+    "source_row_groups": 217,
+    "selected_row_groups": [
+      16,
+      51,
+      95,
+      138,
+      149,
+      160,
+      161,
+      178
+    ],
+    "selection_seed": 16622047656517592706,
+    "retained_rows": 800,
+    "inclusion_probability": 0.03686635944700461
+  },
+  {
+    "path": "data/train-00007-of-00014.parquet",
+    "source_rows": 21603,
+    "source_row_groups": 217,
+    "selected_row_groups": [
+      4,
+      5,
+      30,
+      59,
+      104,
+      106,
+      113,
+      180
+    ],
+    "selection_seed": 15006938825515786774,
+    "retained_rows": 800,
+    "inclusion_probability": 0.03686635944700461
+  },
+  {
+    "path": "data/train-00008-of-00014.parquet",
+    "source_rows": 21602,
+    "source_row_groups": 217,
+    "selected_row_groups": [
+      25,
+      82,
+      119,
+      128,
+      184,
+      188,
+      200,
+      213
+    ],
+    "selection_seed": 9714714243574806357,
+    "retained_rows": 800,
+    "inclusion_probability": 0.03686635944700461
+  },
+  {
+    "path": "data/train-00009-of-00014.parquet",
+    "source_rows": 21602,
+    "source_row_groups": 217,
+    "selected_row_groups": [
+      31,
+      64,
+      93,
+      119,
+      126,
+      127,
+      135,
+      159
+    ],
+    "selection_seed": 3540188141793693525,
+    "retained_rows": 800,
+    "inclusion_probability": 0.03686635944700461
+  },
+  {
+    "path": "data/train-00010-of-00014.parquet",
+    "source_rows": 21602,
+    "source_row_groups": 217,
+    "selected_row_groups": [
+      3,
+      29,
+      43,
+      74,
+      80,
+      92,
+      100,
+      124
+    ],
+    "selection_seed": 335047976185235824,
+    "retained_rows": 800,
+    "inclusion_probability": 0.03686635944700461
+  },
+  {
+    "path": "data/train-00011-of-00014.parquet",
+    "source_rows": 21602,
+    "source_row_groups": 217,
+    "selected_row_groups": [
+      29,
+      42,
+      45,
+      104,
+      107,
+      108,
+      148,
+      189
+    ],
+    "selection_seed": 15117644807433327723,
+    "retained_rows": 800,
+    "inclusion_probability": 0.03686635944700461
+  },
+  {
+    "path": "data/train-00012-of-00014.parquet",
+    "source_rows": 21602,
+    "source_row_groups": 217,
+    "selected_row_groups": [
+      2,
+      66,
+      70,
+      88,
+      117,
+      134,
+      169,
+      207
+    ],
+    "selection_seed": 9387654506914730516,
+    "retained_rows": 800,
+    "inclusion_probability": 0.03686635944700461
+  },
+  {
+    "path": "data/train-00013-of-00014.parquet",
+    "source_rows": 21602,
+    "source_row_groups": 217,
+    "selected_row_groups": [
+      5,
+      37,
+      51,
+      57,
+      72,
+      79,
+      195,
+      200
+    ],
+    "selection_seed": 14745762332721963260,
+    "retained_rows": 800,
+    "inclusion_probability": 0.03686635944700461
+  },
+  {
+    "path": "data/validation-00000-of-00003.parquet",
+    "source_rows": 22822,
+    "source_row_groups": 229,
+    "selected_row_groups": [
+      30,
+      47,
+      58,
+      66,
+      95,
+      121,
+      132,
+      156,
+      165,
+      178,
+      210,
+      223
+    ],
+    "selection_seed": 11811871240649774839,
+    "retained_rows": 1200,
+    "inclusion_probability": 0.05240174672489083
+  },
+  {
+    "path": "data/validation-00001-of-00003.parquet",
+    "source_rows": 22821,
+    "source_row_groups": 229,
+    "selected_row_groups": [
+      26,
+      31,
+      63,
+      113,
+      149,
+      150,
+      169,
+      177,
+      181,
+      191,
+      193,
+      201
+    ],
+    "selection_seed": 11055701384790886161,
+    "retained_rows": 300,
+    "inclusion_probability": 0.05240174672489083
+  },
+  {
+    "path": "data/validation-00002-of-00003.parquet",
+    "source_rows": 22821,
+    "source_row_groups": 229,
+    "selected_row_groups": [
+      13,
+      31,
+      35,
+      67,
+      105,
+      158,
+      160,
+      173,
+      182,
+      184,
+      194,
+      218
+    ],
+    "selection_seed": 16965959010532688355,
+    "retained_rows": 0,
+    "inclusion_probability": 0.05240174672489083
+  }
+]

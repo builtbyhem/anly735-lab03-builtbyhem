@@ -1,0 +1,14 @@
+environment    n  accuracy  balanced_accuracy  roc_auc    brier  log_loss  prevalence
+         ID 1500  0.876667           0.877222 0.951582 0.089897  0.300723    0.508000
+        OOD 3164  0.618837           0.616064 0.467105 0.344109  4.541944    0.506005
+split     n hospitals  patients  slides  tumor_fraction  weighted_tumor_fraction  mean_red  mean_green  mean_blue
+   ID  1500     0,3,4        26      30        0.508000                 0.508000  0.746774    0.586638   0.722186
+  OOD  3164         2         9      10        0.506005                 0.506005  0.670840    0.473806   0.735315
+train 11200     0,3,4        26      30        0.489911                 0.489911  0.744551    0.587778   0.718789
+environment variable  value    n  accuracy  mean_probability
+         ID    label      0  738  0.911924          0.129858
+         ID    label      1  762  0.842520          0.815362
+        OOD    label      0 1563  0.385157          0.626026
+        OOD    label      1 1601  0.846971          0.809540
+Iterations: [330]
+All checks: {'features_are_88_image_statistics_only': True, 'all_image_coordinates_unique': True, 'no_missing_features_or_labels': True, 'training_hospitals_correct': True, 'ID_hospitals_correct': True, 'OOD_hospital_correct': True, 'OOD_validation_excluded': True, 'OOD_patients_unseen': True, 'OOD_slides_unseen': True, 'both_classes_in_each_split': True, 'model_converged': True, 'one_model_fitted': True, 'ID_and_OOD_predictions_complete': True, 'no_exact_image_hash_overlap_between_splits': True}

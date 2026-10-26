@@ -1,0 +1,23 @@
+{
+  "features_are_88_image_statistics_only": true,
+  "all_image_coordinates_unique": true,
+  "no_missing_features_or_labels": true,
+  "training_hospitals_correct": true,
+  "ID_hospitals_correct": true,
+  "OOD_hospital_correct": true,
+  "OOD_validation_excluded": true,
+  "OOD_patients_unseen": true,
+  "OOD_slides_unseen": true,
+  "both_classes_in_each_split": true,
+  "model_converged": true,
+  "one_model_fitted": true,
+  "ID_and_OOD_predictions_complete": true,
+  "no_exact_image_hash_overlap_between_splits": true,
+  "independent_accuracy_arithmetic": true,
+  "independent_brier_arithmetic": true,
+  "deterministic_rerun_identical_predictions": true,
+  "all_21_source_shards_in_manifest": true,
+  "mirror_training_count_matches_original": true,
+  "mirror_validation_count_matches_original": true,
+  "mirror_test_count_matches_original": true
+}

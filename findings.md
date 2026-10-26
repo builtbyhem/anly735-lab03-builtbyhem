@@ -1,0 +1,1 @@
+Accuracy changed from **87.67% to 61.88%**, a difference of -25.78 percentage points. Balanced accuracy changed by -26.12 points, ROC AUC by -0.484, and Brier score by +0.254. Higher accuracy, balanced accuracy, and AUC are better; lower Brier score is better.

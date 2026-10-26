@@ -1,0 +1,31 @@
+pandoc 
+  to: html
+  output-file: replication-lab.html
+  standalone: true
+  embed-resources: true
+  section-divs: true
+  html-math-method: mathjax
+  wrap: none
+  default-image-extension: png
+  toc: true
+  toc-depth: 2
+  number-sections: true
+  css:
+    - styles.css
+  
+metadata
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: en
+  title: When the Test Environment Changes
+  subtitle: Replication Laboratory 3 | Generalization across hospitals in Camelyon17-WILDS
+  author: Hemendra Gummadi
+  date: '2026-10-25'
+  bibliography:
+    - references.bib
+  csl: apa.csl
+  theme: cosmo
+  
+Output created: replication-lab.html
+
